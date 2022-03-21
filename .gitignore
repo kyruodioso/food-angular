@@ -6,6 +6,11 @@
 /out-tsc
 /bazel-out
 
+#Angular Environmoent variables 
+environment.prod.ts 
+environment.ts
+.env
+
 # Node
 /node_modules
 npm-debug.log

@@ -1,0 +1,6 @@
+<div class="container">
+    <h2 class="title">Platos</h2>
+    <app-search (busquedaEmitida)="respondiendoBusqueda($event)"></app-search>
+    <app-loader *ngIf="loading"></app-loader>
+     <app-platos-cards [listFood]="listFood"></app-platos-cards>
+</div>

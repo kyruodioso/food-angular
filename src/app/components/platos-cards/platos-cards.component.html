@@ -1,0 +1,53 @@
+<div class="container">
+<div class="cards" id="cards">
+    <ul *ngFor="let food of listFood">
+        <li>
+            <div class="container_cards">
+                <div class="product-details">
+                    <h1>{{food.recipe.label}}</h1>
+                    <span class="hint-star star">
+                        <fa-icon [icon]="faStar" aria-hidden="true"></fa-icon>
+
+                        <i>
+                            <fa-icon [icon]="faStarO"></fa-icon>
+                        </i>
+                    </span>
+                    <p class="information"></p>
+                    <span class="time-food"><i class="fa-2x">
+                            <fa-icon [icon]="faClock"></fa-icon>
+                        </i>Tiempo: {{food.recipe.totalTime}}'</span>
+                    <div class="control">
+
+                        <button class="btn">
+                            <a class="btn-receta" href="{{food.recipe.shareAs}}" Target="_blank">
+                                <span class="price"><i class="fa fa-bread-slice" aria-hidden="true"></i></span>
+                                <span class="shopping-cart"><i
+                                        class="fa-solid fa-2x fa-circle-right"></i></span>
+                                <span class="buy">Receta</span>
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-image">
+
+                 <img src="{{food.recipe.image}}" alt="">
+
+
+                    <div class="info">
+                        <h2> Descripción</h2>
+                        <ul>
+                            <li><strong>Version : </strong>{{food.recipe.cuisineType}} </li>
+                            <li><strong>Tipo de plato: </strong>{{food.recipe.dishType}}</li>
+                            <li><strong>Calorias : </strong>{{food.recipe.calories}} Cal</li>
+                            <li><strong>Colesterol: </strong>{{food.recipe.colesterol}} mg</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>

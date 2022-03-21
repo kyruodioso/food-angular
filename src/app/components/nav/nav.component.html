@@ -1,0 +1,13 @@
+<nav>
+    <div class="hamburger" (click)="onMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="nav-links" [ngClass]="{'open': showMenu}" >
+        <li><a routerLink="/" (click)="onMenu()">Inicio</a> </li>
+        <li><a routerLink="/cocina" (click)="onMenu()">Cocina</a> </li>
+        <li><a routerLink="/contacto" (click)="onMenu()">Contacto</a> </li>
+        <li><a routerLink="/nosotros" (click)="onMenu()">Nosotros</a> </li>
+    </ul>
+</nav>
