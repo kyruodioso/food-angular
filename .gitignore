@@ -7,8 +7,8 @@
 /bazel-out
 
 #Angular Environmoent variables 
-environment.prod.ts 
-environment.ts
+/environment.prod.ts 
+/environment.ts
 .env
 
 # Node
